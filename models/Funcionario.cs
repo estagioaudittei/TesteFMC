@@ -12,6 +12,14 @@ public class FuncionarioContext : DbContext
     // Funcoes é nossa referencia na tabela (possivelmente até mesmo o nome) 
     public DbSet<Funcionario> Funcionarios { get; set; }
 
+    public string CaminhoBancoDeDados = "Host=localhost;Port=5432;Database=projetoteste;Username=alexandre2;Password=123;";
+
+    // The following configures EF to create a Npgsql database file in the
+    // special "local" folder for your platform.
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+        => options.UseNpgsql(CaminhoBancoDeDados);
+
+
 }
 
 public class Funcao
