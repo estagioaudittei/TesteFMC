@@ -27,6 +27,12 @@ public class ContextoBancoDeDados : DbContext
         builder.Entity<Aula>().Property(a => a.CursoId)
         .HasColumnName("id_curso");
 
+        builder.Entity<Materia>().Property(a => a.CursoId)
+        .HasColumnName("id_curso_qtsHein");
+
+        builder.Entity<Materia>().Property(a => a.ProfessorId)
+        .HasColumnName("id_do_professor");
+
 
 
 
