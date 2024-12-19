@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/dev/Desktop/ProjetoTeste/projetoteste3/ProjetoEscola/Escola.csproj": {}
+    "/home/dev/Desktop/ProjetoTeste/ProjetoEscola/Escola.csproj": {}
   },
   "projects": {
-    "/home/dev/Desktop/ProjetoTeste/projetoteste3/ProjetoEscola/Escola.csproj": {
+    "/home/dev/Desktop/ProjetoTeste/ProjetoEscola/Escola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dev/Desktop/ProjetoTeste/projetoteste3/ProjetoEscola/Escola.csproj",
+        "projectUniqueName": "/home/dev/Desktop/ProjetoTeste/ProjetoEscola/Escola.csproj",
         "projectName": "Escola",
-        "projectPath": "/home/dev/Desktop/ProjetoTeste/projetoteste3/ProjetoEscola/Escola.csproj",
+        "projectPath": "/home/dev/Desktop/ProjetoTeste/ProjetoEscola/Escola.csproj",
         "packagesPath": "/home/dev/.nuget/packages/",
-        "outputPath": "/home/dev/Desktop/ProjetoTeste/projetoteste3/ProjetoEscola/obj/",
+        "outputPath": "/home/dev/Desktop/ProjetoTeste/ProjetoEscola/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dev/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,26 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
